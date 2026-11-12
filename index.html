@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Кинезис — фитнес-студия на Родниках, Новосибирск</title>
+<meta name="description" content="Фитнес-студия «Кинезис» на Родниках: пилатес, йога в гамаках, TRX, суставная гимнастика 60+, персональные тренировки. 4,8 из 5 в 2ГИС. Ул. Михаила Немыткина, 10. Тел. +7 (383) 204-98-55.">
+<meta property="og:title" content="Кинезис — фитнес-студия на Родниках">
+<meta property="og:description" content="Пилатес, йога в гамаках, TRX, суставная гимнастика. Камерная студия в цокольном этаже на Немыткина, 10. 4,8 из 5 в 2ГИС.">
+<meta property="og:image" content="assets/og-cover.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#faf5ee">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&family=Onest:wght@400;500;600&family=Prata&display=swap" rel="stylesheet">
+<style>
+/* Hallmark · genre: editorial · macrostructure: Quote-Led · theme: custom «Родники» (тёплая бумага, терракота, зелёный гамаков) · enrichment: none (typography + real photos) · nav: N5 floating pill · footer: Ft4 dense colophon
+ * pre-emit critique: P5 H4 E5 S5 R4 V5
+ * правки заказчика: hyphens: none — переносов слов нет нигде на странице */
+:root{
+  --color-paper:      oklch(97.2% 0.008 75);
+  --color-paper-2:    oklch(94.4% 0.012 72);
+  --color-paper-3:    oklch(90.6% 0.015 70);
+  --color-rule:       oklch(85.5% 0.014 70);
+  --color-neutral:    oklch(62%   0.010 65);
+  --color-muted:      oklch(45%   0.012 60);
+  --color-ink:        oklch(23%   0.014 55);
+  --color-accent:     oklch(63%   0.160 45);
+  --color-accent-ink: oklch(46%   0.145 42);
+  --color-leaf:       oklch(47%   0.070 165);
+  --color-focus:      oklch(55%   0.170 45);
+
+  --font-display: "Prata", ui-serif, Georgia, serif;
+  --font-body:    "Onest", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "Cascadia Mono", monospace;
+
+  --space-3xs: 0.375rem;
+  --space-2xs: 0.625rem;
+  --space-xs:  0.875rem;
+  --space-sm:  1.25rem;
+  --space-md:  1.75rem;
+  --space-lg:  2.5rem;
+  --space-xl:  4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+
+  --rule-hair: 1px;
+  --radius-sm: 0.5rem;
+  --radius-lg: 1.25rem;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-md:   1.125rem;
+  --text-lg:   clamp(1.25rem, 1.6vw + 0.9rem, 1.5rem);
+  --text-xl:   clamp(1.5rem, 2.2vw + 1rem, 1.95rem);
+  --text-2xl:  clamp(1.85rem, 3.2vw + 1rem, 2.55rem);
+  --text-display: clamp(2rem, 4.6vw + 0.6rem, 3.5rem);
+
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --measure: 62ch;
+}
+
+*,*::before,*::after{ box-sizing: border-box; }
+html{
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  overflow-x: clip;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 400;
+  line-height: 1.6;
+  hyphens: none;
+  -webkit-hyphens: none;
+  font-variant-numeric: oldstyle-nums;
+}
+img{ display: block; max-width: 100%; height: auto; }
+p{ margin: 0 0 var(--space-sm); }
+p:last-child{ margin-bottom: 0; }
+
+h1,h2,h3{
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  margin: 0;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-wrap: balance;
+}
+h1{ font-size: var(--text-display); line-height: 1.14; }
+h2{ font-size: var(--text-2xl); line-height: 1.18; }
+h3{ font-size: var(--text-lg); line-height: 1.25; }
+
+a{ color: var(--color-accent-ink); text-decoration-thickness: var(--rule-hair); text-underline-offset: 0.22em; }
+a:hover{ text-decoration-thickness: 2px; }
+:focus-visible{
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.wrap{
+  width: min(100% - 2 * var(--gutter), 68rem);
+  margin-inline: auto;
+}
+.section{ padding-block: var(--space-xl); scroll-margin-top: 6.5rem; }
+@media (min-width: 60rem){ .section{ padding-block: var(--space-2xl); } }
+
+.eyebrow{
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin: 0 0 var(--space-sm);
+}
+.lede{ font-size: var(--text-md); color: var(--color-muted); max-width: var(--measure); }
+
+/* ── N5 floating pill ─────────────────────────────────────────── */
+.nav{
+  position: fixed;
+  inset: max(var(--space-2xs), env(safe-area-inset-top)) auto auto 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  max-width: calc(100% - 1.5rem);
+  padding: 0.4rem 0.4rem 0.4rem 0.95rem;
+  background: color-mix(in oklch, var(--color-paper) 82%, transparent);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  backdrop-filter: blur(14px) saturate(120%);
+  border: var(--rule-hair) solid var(--color-rule);
+  border-radius: 999px;
+  box-shadow: 0 10px 26px -18px oklch(23% 0.02 55 / 0.55);
+}
+.nav__mark{
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  letter-spacing: 0.02em;
+  color: var(--color-ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav__links{ display: none; gap: var(--space-xs); list-style: none; margin: 0; padding: 0; }
+.nav__links a{
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  text-decoration: none;
+  white-space: nowrap;
+  padding-inline: 0.15rem;
+}
+.nav__links a:hover{ color: var(--color-ink); }
+@media (min-width: 52rem){
+  .nav__links{ display: flex; }
+  .nav{ gap: var(--space-sm); padding-left: 1.15rem; }
+}
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45em;
+  min-height: 44px;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: var(--rule-hair) solid var(--color-accent-ink);
+  background: transparent;
+  color: var(--color-accent-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+.btn:hover{ background: var(--color-accent-ink); color: var(--color-paper); }
+.btn:active{ transform: translateY(1px); }
+.btn--fill{ background: var(--color-accent-ink); color: var(--color-paper); }
+.btn--fill:hover{ background: var(--color-ink); border-color: var(--color-ink); }
+.btn--lg{ min-height: 52px; padding: 0.8rem 1.5rem; font-size: var(--text-base); }
+.nav .btn{ min-height: 44px; padding: 0.35rem 1rem; }
+
+.link-quiet{
+  display: inline-block;
+  padding-block: 0.8rem;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-accent-ink);
+  text-decoration: none;
+  border-bottom: var(--rule-hair) solid currentColor;
+  padding-bottom: 0.1em;
+  white-space: nowrap;
+}
+.link-quiet:hover{ color: var(--color-ink); border-color: var(--color-ink); }
+
+/* ── Hero: цитата ─────────────────────────────────────────────── */
+.hero{ padding: calc(var(--space-3xl) + 2.5rem) 0 var(--space-xl); }
+@media (min-width: 60rem){ .hero{ padding: calc(var(--space-3xl) + 3rem) 0 var(--space-2xl); } }
+.hero__title{
+  font-size: clamp(2.5rem, 2.4vw + 1.85rem, 4rem);
+  margin: 0 0 var(--space-md);
+}
+.hero__sub{
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  line-height: 1.34;
+  letter-spacing: -0.005em;
+  color: var(--color-muted);
+  margin: 0 0 var(--space-md);
+  max-width: 30ch;
+  text-wrap: pretty;
+}
+.hero__sub::before{ content: "«"; color: var(--color-accent); }
+.hero__sub::after{ content: "»"; color: var(--color-accent); }
+.hero__attr{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  margin: 0 0 var(--space-md);
+}
+.hero__attr b{ color: var(--color-ink); font-weight: 600; }
+.hero__meta{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs) var(--space-md);
+  padding-top: var(--space-md);
+  border-top: var(--rule-hair) solid var(--color-rule);
+}
+.hero__rating{
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+.hero__rating strong{
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  font-variant-numeric: tabular-nums;
+}
+.hero__phone{
+  display: inline-block;
+  padding-block: 0.55rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: var(--rule-hair) solid var(--color-rule);
+  padding-bottom: 0.15em;
+}
+.hero__phone:hover{ border-color: var(--color-accent-ink); color: var(--color-accent-ink); }
+
+/* ── Лента фото под героем ────────────────────────────────────── */
+.band{ margin: 0; }
+.band img{ width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+@media (min-width: 52rem){ .band img{ aspect-ratio: 21 / 9; } }
+.band figcaption{
+  width: min(100% - 2 * var(--gutter), 68rem);
+  margin: var(--space-2xs) auto 0;
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+/* ── Полоса доказательств ─────────────────────────────────────── */
+.proof{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-sm);
+  padding-block: var(--space-lg);
+  border-bottom: var(--rule-hair) solid var(--color-rule);
+}
+@media (min-width: 40rem){ .proof{ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-md) var(--space-lg); } }
+@media (min-width: 60rem){ .proof{ grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.proof div{ min-width: 0; }
+.proof dt, .proof b{
+  display: block;
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  margin-bottom: 0.15rem;
+}
+.proof span{ font-size: var(--text-sm); color: var(--color-muted); }
+
+/* ── Направления ──────────────────────────────────────────────── */
+.split{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-md) var(--space-xl);
+  align-items: start;
+}
+@media (min-width: 56rem){
+  .split{ grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); align-items: center; }
+  .split--flip > :first-child{ order: 2; }
+}
+.figure{ margin: 0; min-width: 0; }
+.figure img{
+  width: 100%;
+  border-radius: var(--radius-lg);
+  background: var(--color-paper-2);
+}
+.figure figcaption{
+  margin-top: var(--space-2xs);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  max-width: 46ch;
+}
+.photo-pair{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2xs);
+}
+.photo-pair .figure img{ aspect-ratio: 3 / 4; object-fit: cover; }
+
+.dirs{ list-style: none; margin: 0; padding: 0; }
+@media (min-width: 60rem){
+  .dirs{ column-count: 2; column-gap: var(--space-xl); }
+  .dirs li{ break-inside: avoid; }
+}
+.dirs li{
+  padding-block: var(--space-2xs);
+  border-top: var(--rule-hair) solid var(--color-rule);
+}
+.dirs li:first-child{ border-top: 0; }
+.dirs h3{
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: 400;
+  color: var(--color-ink);
+  margin-bottom: 0.1rem;
+}
+.dirs span{ display: block; font-size: var(--text-sm); color: var(--color-muted); max-width: 42ch; }
+
+/* ── Тренер ───────────────────────────────────────────────────── */
+.quote-block{
+  border-left: 2px solid var(--color-accent);
+  padding-left: var(--space-sm);
+  margin: var(--space-md) 0 0;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  line-height: 1.45;
+  color: var(--color-ink);
+  max-width: 44ch;
+}
+.quote-block cite{
+  display: block;
+  margin-top: var(--space-2xs);
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+/* ── Зал: асимметричная сетка ─────────────────────────────────── */
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2xs);
+  margin-top: var(--space-md);
+}
+.gallery .figure img{ aspect-ratio: 1 / 1; object-fit: cover; }
+.gallery .figure--wide{ grid-column: 1 / -1; }
+.gallery .figure--wide img{ aspect-ratio: 16 / 9; }
+@media (min-width: 52rem){
+  .gallery{ grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .gallery .figure--wide{ grid-column: span 6; }
+  .gallery .figure--wide img{ aspect-ratio: 21 / 9; }
+  .gallery .figure--half{ grid-column: span 3; }
+  .gallery .figure--half img{ aspect-ratio: 4 / 3; }
+}
+
+/* ── Как найти ────────────────────────────────────────────────── */
+.facts{ margin: 0; display: grid; gap: var(--space-sm); }
+.facts dt{
+  font-size: var(--text-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 0.15rem;
+}
+.facts dd{ margin: 0; font-size: var(--text-md); color: var(--color-ink); }
+.facts dd small{ display: block; font-size: var(--text-sm); color: var(--color-muted); margin-top: 0.15rem; }
+.facts dd a{ display: inline-block; padding-block: 0.5rem; }
+@media (min-width: 40rem){ .facts{ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-md); } }
+
+/* ── Отзывы ───────────────────────────────────────────────────── */
+.reviews{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-md);
+  margin: 0;
+}
+@media (min-width: 52rem){ .reviews{ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-lg); } }
+.reviews blockquote{
+  margin: 0;
+  padding-top: var(--space-sm);
+  border-top: var(--rule-hair) solid var(--color-rule);
+}
+.reviews p{
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  line-height: 1.5;
+  color: var(--color-ink);
+  max-width: 46ch;
+}
+.reviews cite{
+  display: block;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: var(--text-xs);
+  letter-spacing: 0.02em;
+  color: var(--color-muted);
+}
+
+/* ── Запись ───────────────────────────────────────────────────── */
+.cta{
+  background: var(--color-paper-2);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-sm);
+}
+@media (min-width: 52rem){ .cta{ padding: var(--space-xl) var(--space-lg); } }
+.cta h2{ margin-bottom: var(--space-xs); max-width: 18ch; }
+.cta p{ max-width: var(--measure); color: var(--color-muted); }
+.cta__row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  margin-top: var(--space-md);
+}
+.cta__note{
+  margin-top: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+.cta__note a{ color: var(--color-ink); text-decoration: none; border-bottom: var(--rule-hair) solid var(--color-rule); white-space: nowrap; }
+
+/* ── Ft4: плотный колофон ─────────────────────────────────────── */
+.foot{
+  padding: var(--space-lg) 0 calc(var(--space-md) + env(safe-area-inset-bottom));
+  border-top: var(--rule-hair) solid var(--color-rule);
+  margin-top: var(--space-xl);
+}
+.foot p{
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  line-height: 1.85;
+  color: var(--color-muted);
+  max-width: 78ch;
+  margin: 0 0 var(--space-2xs);
+}
+.foot__row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.55rem;
+}
+.foot__row > *:not(:last-child)::after{
+  content: "·";
+  color: var(--color-rule);
+  margin-left: 0.55rem;
+}
+.foot a{ color: var(--color-muted); text-decoration: none; white-space: nowrap; }
+.foot a:hover{ color: var(--color-ink); border-bottom: var(--rule-hair) solid currentColor; }
+.foot__note{ color: var(--color-muted); }
+@media (pointer: coarse){
+  .foot a{ display: inline-block; padding-block: 0.45rem; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Основное меню">
+  <a class="nav__mark" href="#top">Кинезис</a>
+  <ul class="nav__links">
+    <li><a href="#napravleniya">Занятия</a></li>
+    <li><a href="#trener">Тренер</a></li>
+    <li><a href="#zal">Зал</a></li>
+    <li><a href="#kak-nayti">Как найти</a></li>
+  </ul>
+  <a class="btn btn--fill" href="https://wa.me/79232472805">WhatsApp</a>
+</nav>
+
+<main id="top">
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Фитнес-студия · Новосибирск, Родники</p>
+      <h1 class="hero__title">Кинезис</h1>
+      <p class="hero__sub">Отличная студия, самый лучший тренер Ольга, хожу уже несколько лет</p>
+      <p class="hero__attr">
+        <b>Olga Sukhushina</b>
+        <span>отзыв в 2ГИС, 14 ноября 2025</span>
+      </p>
+      <div class="hero__meta">
+        <span class="hero__rating"><strong>4,8</strong> из 5 — 35 оценок, 27 отзывов</span>
+        <a class="link-quiet" href="https://2gis.ru/novosibirsk/firm/70000001024945646/tab/reviews">Читать отзывы</a>
+        <a class="hero__phone" href="tel:+73832049855">+7 (383) 204-98-55</a>
+      </div>
+    </div>
+  </header>
+
+  <figure class="band">
+    <img src="assets/hall.webp" width="972" height="642" alt="Зал студии «Кинезис»: светлый деревянный пол, терракотовый пол у стены, вдоль зеркал висят гамаки для аэройоги" fetchpriority="high">
+    <figcaption>Зал студии. Фото из карточки 2ГИС</figcaption>
+  </figure>
+
+  <section class="section" aria-label="Коротко о студии">
+    <div class="wrap">
+      <div class="proof">
+        <div><b>4,8 / 5</b><span>35 оценок в 2ГИС</span></div>
+        <div><b>2016</b><span>год первых отзывов о студии</span></div>
+        <div><b>3 мин</b><span>от остановки «Свечникова»</span></div>
+        <div><b>цоколь</b><span>ул. Михаила Немыткина, 10</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="napravleniya" aria-labelledby="dirs-title">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Направления</p>
+        <h2 id="dirs-title">Чем здесь занимаются</h2>
+        <p class="lede">От пилатеса для новичков до петель TRX для тех, кто уже в форме. Названия направлений — из отзывов клиентов студии.</p>
+        <ul class="dirs">
+          <li><h3>Пилатес</h3><span>Спокойный темп на матах. Чаще всего его вспоминают в отзывах: «подходит всем абсолютно».</span></li>
+          <li><h3>Йога в гамаках</h3><span>Аэройога: упражнения целиком в гамаке или с частичной опорой на него.</span></li>
+          <li><h3>TRX</h3><span>Работа на подвесных петлях — вариант для тех, кто уже занимается.</span></li>
+          <li><h3>Упругая сила</h3><span>Силовой формат студии; в отзывах идёт в паре с пилатесом.</span></li>
+          <li><h3>Суставная гимнастика</h3><span>Группа 60+: подвижность суставов и общее укрепление. О ней пишут отдельно.</span></li>
+          <li><h3>Растяжка</h3><span>Растяжка и балетная хореография.</span></li>
+          <li><h3>Бачата</h3><span>Танцевальное направление, о нём в отзывах рассказывают как о новом.</span></li>
+          <li><h3>Персональная тренировка</h3><span>Один на один, в отдельном зале с оборудованием.</span></li>
+        </ul>
+      </div>
+      <div class="photo-pair">
+        <figure class="figure">
+          <img src="assets/aeroyoga.webp" width="900" height="1125" alt="Занятие по аэройоге: участница в зелёном гамаке, рядом ещё несколько полотнищ" loading="lazy">
+          <figcaption>Аэройога</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="assets/trx.webp" width="820" height="1025" alt="Тренировка на петлях TRX у зеркала в зале студии" loading="lazy">
+          <figcaption>Петли TRX</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="trener" aria-labelledby="trener-title">
+    <div class="wrap split split--flip">
+      <div>
+        <p class="eyebrow">Тренер</p>
+        <h2 id="trener-title">Ольга Павловна</h2>
+        <p class="lede">Её называют в каждом втором отзыве — и почти всегда с одной мыслью: человек ведёт занятия годами, поэтому сюда возвращаются годами.</p>
+        <p>В отзывах пишут, что она сертифицированный специалист, постоянно учится и меняет программу, а объясняет так, чтобы было понятно, как работает тело, а не только как повторить упражнение.</p>
+        <blockquote class="quote-block">
+          Она старается донести до нас подробно не только правильность выполнения текущих упражнений, но и вложить нам в головы принципы работы тела.
+          <cite>Елена Sa · 2ГИС, 13 ноября 2025</cite>
+        </blockquote>
+      </div>
+      <figure class="figure">
+        <img src="assets/group.webp" width="1200" height="890" alt="Групповое занятие в студии: участницы стоят на ковриках с поднятыми руками, вдоль стены — гамаки" loading="lazy">
+        <figcaption>Групповое занятие. Фото из карточки 2ГИС</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="zal" aria-labelledby="zal-title">
+    <div class="wrap">
+      <p class="eyebrow">Студия</p>
+      <h2 id="zal-title">Что внутри</h2>
+      <p class="lede">Цокольный этаж, камерные залы и всё, что нужно, чтобы прийти после работы и уйти без спешки: раздевалка, душ, полотенца.</p>
+      <div class="gallery">
+        <figure class="figure figure--half">
+          <img src="assets/room.webp" width="972" height="642" alt="Отдельный небольшой зал с жёлтыми стенами и зеркалом, на стене — панно с горным пейзажем" loading="lazy">
+          <figcaption>Зал для персональных тренировок</figcaption>
+        </figure>
+        <figure class="figure figure--half">
+          <img src="assets/pilates.webp" width="1200" height="792" alt="Большая группа на ковриках в зале студии: занятие по пилатесу, у стены зеркала и окна" loading="lazy">
+          <figcaption>Групповой зал на занятии по пилатесу</figcaption>
+        </figure>
+        <figure class="figure figure--half">
+          <img src="assets/locker.webp" width="900" height="594" alt="Раздевалка: светлые шкафчики для вещей, жёлтая скамья, раковина и зеркало" loading="lazy">
+          <figcaption>Раздевалка</figcaption>
+        </figure>
+        <figure class="figure figure--half">
+          <img src="assets/shower.webp" width="900" height="594" alt="Душевая кабина со зелёной плиткой и круглым зеркалом" loading="lazy">
+          <figcaption>Душ</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="kak-nayti" aria-labelledby="find-title">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Родники · Калининский район</p>
+        <h2 id="find-title">Как найти</h2>
+        <dl class="facts">
+          <div>
+            <dt>Адрес</dt>
+            <dd>ул. Михаила Немыткина, 10<small>Родники, Калининский район. Цокольный этаж — вход вниз по лестнице</small></dd>
+          </div>
+          <div>
+            <dt>Транспорт</dt>
+            <dd>Остановка «Свечникова»<small>3 минуты пешком, около 300 метров</small></dd>
+          </div>
+          <div>
+            <dt>Часы работы</dt>
+            <dd>Пн–Сб 08:00–21:00<small>Перерыв с 12:30 до 17:00. Воскресенье 10:00–12:00</small></dd>
+          </div>
+          <div>
+            <dt>Телефоны</dt>
+            <dd><a href="tel:+73832049855">+7 (383) 204-98-55</a><small><a href="tel:+79232472805">+7 (923) 247-28-05</a> — он же WhatsApp и Viber</small></dd>
+          </div>
+        </dl>
+        <p style="margin-top: var(--space-md)">
+          <a class="btn" href="https://2gis.ru/novosibirsk/firm/70000001024945646">Открыть в 2ГИС</a>
+        </p>
+      </div>
+      <div class="photo-pair">
+        <figure class="figure">
+          <img src="assets/building.webp" width="760" height="950" alt="Дом на улице Михаила Немыткина, 10: красный кирпичный фасад, вход в цокольный этаж со стороны улицы" loading="lazy">
+          <figcaption>Дом на Немыткина, 10</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="assets/lobby.webp" width="900" height="594" alt="Холл студии: светлые стены, зелёная стена у лестницы, скамья и большая ваза с сухими стеблями" loading="lazy">
+          <figcaption>Холл и вход в залы</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="otzyvy" aria-labelledby="rev-title">
+    <div class="wrap">
+      <p class="eyebrow">Отзывы</p>
+      <h2 id="rev-title">Что говорят те, кто ходит</h2>
+      <p class="lede">27 отзывов в 2ГИС, средняя оценка 4,8. Ниже — цитаты дословно, без правок.</p>
+      <div class="reviews">
+        <blockquote>
+          <p>«Занятия проходят в очень интересной форме, благодаря чему тренировки не превращаются в рутину. Атмосфера в студии чистая и уютная, что создает комфортную обстановку для занятий спортом, небольшие группы».</p>
+          <cite>Татьяна Гаврилова · 21 мая 2026</cite>
+        </blockquote>
+        <blockquote>
+          <p>«Хожу в эту студию не первый год. Очень душевно, все как-то по домашнему, очень уютно!!!»</p>
+          <cite>Инесса Константинова · 13 ноября 2025</cite>
+        </blockquote>
+        <blockquote>
+          <p>«Уютный, светлый зал для групповых занятий, с широким набором инвентаря! Прекрасно оборудованный зал для персональных тренировок!»</p>
+          <cite>Елена Самойлова · 23 ноября 2025</cite>
+        </blockquote>
+        <blockquote>
+          <p>«После тренировки чувствуется невероятное расслабление и легкость».</p>
+          <cite>Дарья Стадник · 21 ноября 2025</cite>
+        </blockquote>
+      </div>
+      <p style="margin-top: var(--space-md)">
+        <a class="link-quiet" href="https://2gis.ru/novosibirsk/firm/70000001024945646/tab/reviews">Все 27 отзывов в 2ГИС</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="zapis" aria-labelledby="zapis-title">
+    <div class="wrap">
+      <div class="cta">
+        <h2 id="zapis-title">Записаться на занятие</h2>
+        <p>Позвоните или напишите в WhatsApp: на первом звонке спросят про физическую подготовку и пригласят на занятие. Стоимость и свободное время подскажем там же.</p>
+        <div class="cta__row">
+          <a class="btn btn--fill btn--lg" href="https://wa.me/79232472805">Написать в WhatsApp</a>
+          <a class="btn btn--lg" href="tel:+73832049855">Позвонить</a>
+        </div>
+        <p class="cta__note">Телефон студии: <a href="tel:+73832049855">+7 (383) 204-98-55</a>, мобильный и WhatsApp: <a href="tel:+79232472805">+7 (923) 247-28-05</a>. Или оставьте сообщение во <a href="https://vk.ru/public128413099">ВКонтакте</a> — там же расписание и новости студии.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__row">
+      <span>Кинезис · фитнес-студия</span>
+      <span>Новосибирск, ул. Михаила Немыткина, 10, цокольный этаж</span>
+      <a href="tel:+73832049855">+7 (383) 204-98-55</a>
+      <a href="tel:+79232472805">+7 (923) 247-28-05</a>
+      <a href="https://wa.me/79232472805">WhatsApp</a>
+      <a href="https://vk.ru/public128413099">ВКонтакте</a>
+    </p>
+    <p class="foot__row">
+      <span>Пн–Сб 08:00–21:00, перерыв 12:30–17:00</span>
+      <span>Вс 10:00–12:00</span>
+      <a href="https://2gis.ru/novosibirsk/firm/70000001024945646">Карточка в 2ГИС</a>
+    </p>
+    <p class="foot__note">
+      Демо-сайт собран по открытым данным карточки 2ГИС (рейтинг, отзывы, адрес, часы). Фотографии — из карточки 2ГИС: автор съёмки Ольга Зуева и посетители студии. Цены и расписание занятий на карточке не опубликованы, поэтому их здесь нет.
+    </p>
+  </div>
+</footer>
+
+
+</body>
+</html>
